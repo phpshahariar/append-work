@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type='text/javascript'>
+$(document).ready(
+  function() {
+    $('input#tmpAddAlbum').click(
+      function($e) {
+        $e.preventDefault();      
+        $('table tbody')[0].innerHTML +=
+          "<tr>\n" +
+          "  <td>\n" + 
+          "    <input type='text' value='value' size='25' />\n" + 
+          "  </td>\n" +
+          "  <td>1980</td>\n" +
+          "</tr>\n";
+      }
+    );
+  }
+);
+    </script>
+
+  </head>
+  <body>
+     <h4>C Albums</h4>
+     <table>
+       <thead>
+         <tr>
+           <th>Title</th>
+           <th>Year</th>        
+         </tr>
+       </thead>
+       <tbody>
+       </tbody>
+     </table>
+     <input type='submit' value='Add Album' id='tmpAddAlbum' />
+  </body>
+</html>

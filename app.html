@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type='text/javascript'>
+$(document).ready(
+  function() {
+    $('table').hover(
+      function() {
+        $('td').addClass('myHover');
+      },
+      function() {
+        $('td').removeClass('myHover');
+      }
+    )
+    .click(
+      function() {
+        $('td').toggleClass('mySelected');
+      }
+    );
+  }
+);
+    </script>
+    <style type='text/css'>
+
+td {
+  width: 100px;
+  height: 100px;
+  border: 1px solid rgb(200, 200, 200);
+}
+td.myHover {
+  background: yellow; 
+}
+td.mySelected {
+  background: C;
+}
+    </style>
+  </head>
+  <body>
+
+     <table>
+       <tbody>
+         <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+         </tr>
+         <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+         </tr>
+         <tr>
+           <td></td>
+           <td></td>
+           <td></td>
+         </tr>
+       </tbody>
+     </table>
+  </body>
+</html>
